@@ -1,0 +1,63 @@
+div,form,h1,h2,h3,h4,h5,h6,p,ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Noto Sans TC",sans-serif;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 200%;
+    font-family: "Press Start 2P";
+    margin-top: 80px;
+    letter-spacing: 6px;
+    text-shadow:0.3em 0.3em 0.4em rgba(0,0,0,1);
+}
+
+h2 {
+    font-size: 200%;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+h1::after {
+    display: block;
+    background-color: #e03d44;
+    content: "";
+    height: 2px;
+    width: 365px;
+    margin-top: 15px; 
+}
+
+.text-box {
+    color: white;
+    position: absolute;
+    transform: translate(40%,110%)
+}
+
+.btn:link {
+    margin-top: 20px;
+    font-weight: 100;
+    border-radius: 8px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e03d44;
+    color: white;
+}
+
+/*--HEADER--*/
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.4)),url(https://images5.alphacoders.com/720/thumb-1920-720131.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
