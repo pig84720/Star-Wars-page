@@ -240,10 +240,6 @@ h3::after {
 
 /*---角色關係圖---*/
 
-.main-menu {
-    height: 640px;
-}
-
 .relation-title{
     height: 180px;
     width: 100%;
@@ -369,4 +365,26 @@ h3::after {
 .big3 {
     margin-top: 0;
     height: 724px;
+}
+
+
+/*---角色---*/
+.cha {
+    margin-top: 0px;
+}
+
+.cha-photo {
+    background-color: black;
+    overflow: hidden;
+}
+
+.cha-photo img{
+    width: 100%;
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition:  all 0.5s;
+}
+
+.cha-photo img:hover{
+    opacity: 1.3;
 }
