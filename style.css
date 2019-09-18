@@ -7,6 +7,8 @@ body {
     font-size: 18px;
     font-weight: 300;
     font-family: "Noto Sans TC",sans-serif;
+    background: url('https://i.screenshot.net/qg2yqtx')
+    center center;
 }
 
 h1 {
@@ -19,9 +21,10 @@ h1 {
 }
 
 h2 {
-    font-size: 200%;
+    font-size: 120%;
     letter-spacing: 4px;
     font-weight: 400;
+    
 }
 
 h1::after {
@@ -30,7 +33,7 @@ h1::after {
     content: "";
     height: 2px;
     width: 365px;
-    margin-top: 15px; 
+    margin-top: 15px;  
 }
 
 .text-box {
@@ -39,10 +42,21 @@ h1::after {
     transform: translate(40%,110%)
 }
 
+.bottom {
+    margin-top: 50px;
+}
+
 .btn:link {
-    margin-top: 20px;
+    text-decoration:none;
+    cursor: pointer;
     font-weight: 100;
     border-radius: 8px;
+    padding: 5px 12px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    filter:brightness(1.2);
 }
 
 .btn-full:link,
@@ -59,5 +73,93 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+/*---about-us---*/
+
+.about-us {
+    height: 35vh;
+
+}
+
+.title-row {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.title-row h2 {
+    font-size: 24px;
+}
+
+.dividerCenter  {
+    height: 2px;
+    width: 80px;
+    background-color: #e03d44;
+    margin: 15px auto;
+
+
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.row p {
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+
+/*---menu---*/
+
+.menu {
+    height: 465px;
+}
+
+.boxImage {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.1)), url('https://images.alphacoders.com/870/thumb-1920-870016.jpg');
+    height: 465px;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: all 0.7s;  
+    position: relative; 
+}
+
+.boxImage:hover {
+    cursor: pointer;
+    filter:brightness(2);
+}
+.boxImage2 {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.1)), url('https://images8.alphacoders.com/988/thumb-1920-988762.jpg');
+    height: 465px;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: all 0.7s;
+    position: relative;    
+}
+
+.boxImage2:hover {
+    cursor: pointer;
+    filter:brightness(2);
+}
+
+.boxImage3 {
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.1)), url('https://images7.alphacoders.com/888/thumb-1920-888752.jpg');
+    height: 465px;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: all 0.7s; 
+    position: relative;   
+}
+
+.boxImage3:hover {
+    cursor: pointer;
+    filter:brightness(2);
+}
+
+.imageBoxesTitle {
+    position: absolute;
+    bottom: 40px;
+    padding: 24px;
 }
 
