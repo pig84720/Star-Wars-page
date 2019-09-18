@@ -215,7 +215,10 @@ h3::after {
 
 .buttom:hover {
     filter:brightness(0.8);
+    font-size: 18px;
 }
+
+
 
 .buttom:link {
     text-decoration:none;
@@ -235,3 +238,135 @@ h3::after {
     padding:0;
 }
 
+/*---角色關係圖---*/
+
+.main-menu {
+    height: 640px;
+}
+
+.relation-title{
+    height: 180px;
+    width: 100%;
+    background-color: black;
+    padding: 60px 300px;
+}
+
+.relation-title h4{
+    font-size: 60px;
+    letter-spacing: 20px;
+    color: #AAAAAA;
+    transition: all 0.7s;
+}
+
+.relation-title h4:hover{
+    filter:brightness(1.8);
+    color: white;
+}
+
+.big {
+    margin-top: 0;
+}
+ 
+.image {
+    background-color: #F2F1D7;
+}
+
+.bg1 {
+    margin-top: 20px;
+    margin-left: 10px; 
+    height: 284.4px;
+    width: 100%;
+    background-image: url("http://www.murera.com/starwars/images/starwars_infographic-03.jpg");   
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+
+.bg2 {
+    height: 355.5px;
+    margin-left: 10px;
+    width: 98.5%;
+    background-image: url("http://www.murera.com/starwars/images/starwars_infographic-04.jpg");   
+    background-size: contain;
+    background-repeat:no-repeat;
+    margin-bottom: 0;
+}
+
+.small-title {
+    margin-top: 100px;
+}
+
+.small-title h2{
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.introduction{
+    padding: 50px 100px;
+}
+
+#A{
+    font-size: 18px;
+    letter-spacing: 2px;    
+}
+
+.big2 {
+    margin-top: 0;
+    height: 776px;
+}
+
+.line {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    left: 170px;
+    width: 700px;
+    background-color: #e03d44;
+}
+
+.bg3 {
+    margin-left: 10px;
+    height: 375px;
+    width: 100%;
+    background-image: url("http://www.murera.com/starwars/images/starwars_infographic-06.jpg");   
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+
+.bg4 {
+    margin-left: 10px;
+    height: 401px;
+    width: 98.5%;
+    background-image: url("http://www.murera.com/starwars/images/starwars_infographic-07.jpg");   
+    background-size: contain;
+    background-repeat:no-repeat;
+    margin-bottom: 0;
+}
+
+.big2 {
+    height: 776px;
+}
+
+.bg5 {
+    margin-left: 10px;
+    height: 304px;
+    width: 100%;
+    background-image: url("http://www.murera.com/starwars/images/starwars_infographic-12.jpg");   
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+
+.bg6 {
+    margin-left: 10px;
+    height: 420px;
+    width: 98.5%;
+    background-image: url("http://www.murera.com/starwars/images/starwars_infographic-11.jpg");   
+    background-size: contain;
+    background-repeat:no-repeat;
+    margin-bottom: 0;
+}
+
+.big3 {
+    margin-top: 0;
+    height: 724px;
+}
