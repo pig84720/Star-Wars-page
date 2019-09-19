@@ -96,8 +96,6 @@ header {
     width: 80px;
     background-color: #e03d44;
     margin: 15px auto;
-
-
 }
 
 .row {
@@ -390,6 +388,7 @@ h3::after {
 
 .feedback {
     margin-top:0; 
+    margin-bottom:0; 
     height: 100vh;
     background-image: url('https://images2.alphacoders.com/781/thumb-1920-781491.jpg');
     background-size: cover;
@@ -452,4 +451,67 @@ h3::after {
     vertical-align:text-top;
     padding: 0;
     margin: 0;
+}
+
+/*---開放時間、地圖---*/
+
+.contact{
+    margin-top: 0;
+}
+
+.bgcolor {
+    color: white;
+    background-color: sienna;
+    height: 480px;
+    padding: 50px 70px 0 90px;
+}
+
+.bgcolor h2{
+    font-size: 28px;
+    letter-spacing: 6px;
+}
+
+.bgcolor2 h2{
+    font-size: 28px;
+    letter-spacing: 6px;
+}
+
+.bgcolor p{
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.bgcolor2 p{
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.email:hover{
+    color: red;
+}
+
+.bgcolor2 {
+
+    height: 480px;
+    padding: 50px 70px 0 70px;
+}
+
+.divder2 {
+    width: 55px;
+    height: 2px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.divder3 {
+    width: 55px;
+    height: 2px;
+    background-color: red;
+    margin-top: 10px;
+}
+
+.map {
+    width: 100%;
+    height: 480px;
+    margin-left: -13px;
 }
