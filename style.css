@@ -263,10 +263,6 @@ h3::after {
     margin-top: 0;
 }
  
-.image {
-    background-color: #F2F1D7;
-}
-
 .bg1 {
     margin-top: 20px;
     margin-left: 10px; 
@@ -344,6 +340,7 @@ h3::after {
 }
 
 .bg5 {
+    margin-top: 30px;
     margin-left: 10px;
     height: 304px;
     width: 100%;
@@ -439,13 +436,11 @@ h3::after {
 .box {
     margin: 55px auto 0 auto;
     padding: 0 40px 0 40px;
-    height: 50vh;
 }
 
 .box2 {
     margin: 0 auto 0 auto;
     padding: 0 40px 60px 40px;
-    height: 50vh;
 }
 
 .impression{
