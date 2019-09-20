@@ -515,3 +515,109 @@ h3::after {
     height: 480px;
     margin-left: -13px;
 }
+
+/*---footer---*/
+
+.footerbg {
+    margin-top: 0;
+    background-color: rgba(42,43,47,0.96);
+    color: rgba(255,255,255,0.8);
+    height: 400px;
+    padding-top: 50px;
+}
+
+.about-me {
+    padding-left: 70px; 
+}
+
+.about-me h5{
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+.about-me p {
+    letter-spacing: 2px;
+}
+
+.messenger2 h4{
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+.messenger2 p{
+    margin-bottom: 5px;
+}
+
+.messenger2 p,
+.messenger2 a{
+    letter-spacing: 2px;
+}
+
+.social-links {
+    margin-top:4px;
+    font-size: 18px;
+}
+
+.social-links li{
+    display: block;
+    margin-top: 10px;
+}
+
+.social-links li a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+}
+
+.ion-social-facebook,
+.ion-social-instagram,
+.ion-social-googleplus,
+.ion-social-github {
+    margin: 8px;
+    transition: all 0.4s;
+}
+
+.ion-social-facebook:hover {
+    color:#3b5998;
+}
+
+.ion-social-instagram:hover {
+    color: #bb5e00;
+}
+
+.ion-social-googleplus:hover {
+    color:#dd4b39;
+}
+
+.ion-social-github:hover {
+    color:#125688;
+}
+
+.iconbox {
+    display: inline-block;
+    width: 15px;
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 0;
+    background-color: rgb(38,39,46);
+}
+
+#mark {
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 50px;
+    font-size: 14px;
+    margin:0 50px;
+}
+
+.copyright a{
+    margin: 0 10px;
+    line-height: 50px;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.4)
+}
+
+.footernav {
+    float: right;
+}
