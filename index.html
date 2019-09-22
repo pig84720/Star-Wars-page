@@ -21,11 +21,35 @@
              <h1>Star Wars</h1>
              <h2>May the force be with you...</h2>
              <div class='bottom'>
-                <a class="btn btn-full" href='#'>了解更多</a>
+                <a class="btn btn-full" href='#about-us'>了解更多</a>
              </div>
          </div>
      </section>
  </header>
+
+<!---navbar-->
+    <nav class="navbg navbar-dark navbar-full id=''">
+        <div class="row area">
+            <div class='col-md-4 logo'>
+                <a class="navbar-brand" href="#home">Star Wars page</a>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="row col-md-4 nav">
+                <div class="col-md-2 nav-item">
+                    <a href="#about-me">關於我</a>
+                </div>
+                <div class="col-md-2 nav-item">
+                        <a href="#relation">劇情脈絡</a>
+                </div>
+                <div class="col-md-2 nav-item">
+                        <a href="#photo">人物圖片</a>
+                </div>
+                <div class="col-md-2 nav-item">
+                        <a href="#contact">聯絡我們</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
  <!--about section-->
     <section class="about-us container" id='about-us'>
@@ -33,7 +57,7 @@
             <h2><strong>《星際大戰》（英語：Star Wars），中文可簡稱「星戰」</strong></h2>
             <div class='dividerCenter'></div>
         </div>
-         <div class='row'>
+         <div class='row content'>
             <div class="col-md-6 col-sm-6">
                 <p>
                     該片描寫，在很久以前，一個遙遠的銀河系，肩負正義使命的絕地武士與帝國邪惡黑暗勢力作戰的故事。絕地武士是一群有著非凡天賦的人，經由各種篩選，他們在幼年即開始接受嚴格特殊訓練，其宗旨是認識和使用「原力」（Force）。訓練有素的絕地武士有極強的意志力可以使用無所不在的「原力」來維護銀河系的和平。例如，影響意志較弱的人的思想，甚至預感將要發生的事情。絕地武士也有著非凡的戰鬥能力。
@@ -46,6 +70,7 @@
             </div>
          </div>
     </section>
+
 
     <section class="row menu">
         <div class='col-md-8'>
@@ -88,7 +113,7 @@
 
         <!---劇情脈絡--->
 
-        <section class='main-menu'>
+        <section class='main-menu' id='relation'>
             <div class='col-md-12 col-sm-12 col-xs-12 relation-title'>
                 <h4>三張圖快速了解劇情脈絡</h4>
             </div>
@@ -150,8 +175,9 @@
                     </div>
                 </div>
         </section>
-        <!--角色圖-->        
-        <section class='row cha'>
+        <!--角色圖-->
+        <section id="photo">       
+        <div class='row cha'>
             <div class='col-md-3 col-sm-6 cha-photo'>
                 <img src="https://lumiere-a.akamaihd.net/v1/images/Darth-Vader_6bda9114.jpeg?region=0%2C23%2C1400%2C785&width=960" alt='DARTH VADER'>
             </div>
@@ -188,7 +214,8 @@
             <div class='col-md-3 col-sm-6 cha-photo'>
                     <img src="https://lumiere-a.akamaihd.net/v1/images/poe-dameron_70f5aee2.jpeg?region=0%2C0%2C1560%2C878&width=960" alt='POE DAMERON'>
             </div>
-        </section>
+        </div>
+        </section> 
 
         <!---反饋-->
         <section class='row feedback'>
@@ -253,29 +280,31 @@
         </section>
 
         <!---營業時間、地點-->
-        <section class='row contact'>
-            <div class='col-md-4 col-sm-6 col-xs-12 messenger'>
-                <div class='bgcolor'>
-                    <h2>開放時間</h2>
-                    <div class='divder2'></div><br>
-                    <p>歡迎各位親自拜訪絕地聖殿獲取更多資訊</p>
-                    <p>我們的開放時間如下:</p>
-                    <p><strong>星期一 ~ 星期日</strong> 09:00 until 23:00</p>
-                    <p>國定假日、颱風天照樣開放</p>
+        <section id='contact'>
+            <div class='row contact'>
+                <div class='col-md-4 col-sm-6 col-xs-12 messenger'>
+                    <div class='bgcolor'>
+                        <h2>開放時間</h2>
+                        <div class='divder2'></div><br>
+                        <p>歡迎各位親自拜訪絕地聖殿獲取更多資訊</p>
+                        <p>我們的開放時間如下:</p>
+                        <p><strong>星期一 ~ 星期日</strong> 09:00 until 23:00</p>
+                        <p>國定假日、颱風天照樣開放</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 messenger">
-                <div class='bgcolor2'>
-                    <h2>絕地聖殿</h2>
-                    <div class='divder3'></div><br>
-                    <p>台北市</p>
-                    <p>士林區前港街45號</p>
-                    <p>(02) 2345 6789</p>
-                    <p class="email">LukeSkywalker@gmail.com</p>
+                <div class="col-md-4 col-sm-6 col-xs-12 messenger">
+                    <div class='bgcolor2'>
+                        <h2>絕地聖殿</h2>
+                        <div class='divder3'></div><br>
+                        <p>台北市</p>
+                        <p>士林區前港街45號</p>
+                        <p>(02) 2345 6789</p>
+                        <p class="email">LukeSkywalker@gmail.com</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="map">
+                <div class="col-md-4">
+                    <div class="map">
+                    </div>
                 </div>
             </div>
         </section>
@@ -285,7 +314,7 @@
             <div class='row footerbg'>
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <div class="messenger">
-                        <div class="about-me">
+                        <div id="about-me">
                             <h5>關於我</h5>
                             <div class='divder3'></div><br>
                             <p>正在向前端工程師之路邁進的男子</p>

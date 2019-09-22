@@ -65,6 +65,47 @@ h1::after {
     color: white;
 }
 
+/*--菜單--*/
+
+.nav {
+    margin: 20px 0;
+    padding-right: 0px;
+}
+
+.logo {
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding-left: 50px; 
+    margin: auto;
+}
+
+.navbg {
+    height: 70px;
+    background-color: rgba(42,43,47,1);
+    margin-top: 0;
+}
+
+.bg {
+    margin-top: 0;
+}
+
+.nav-item{
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.nav-item a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.nav-item a:hover {
+    color: #e03d44;
+}
+
 /*--HEADER--*/
 
 header {
@@ -98,11 +139,11 @@ header {
     margin: 15px auto;
 }
 
-.row {
-    margin-top: 20px;
+.content {
+    margin: 20px 0 50px 0;
 }
 
-.row p {
+.content p {
     font-size: 16px;
     line-height: 1.9;
 }
@@ -121,6 +162,7 @@ header {
     background-position: 50% 50%;
     transition: all 0.7s;  
     position: relative; 
+    margin-top: 50px;
 }
 
 .boxImage:hover {
@@ -133,7 +175,8 @@ header {
     background-size: cover;
     background-position: 50% 50%;
     transition: all 0.7s;
-    position: relative;    
+    position: relative;  
+    margin-top: 50px;  
 }
 
 .boxImage2:hover {
@@ -148,6 +191,7 @@ header {
     background-position: 50% 50%;
     transition: all 0.7s; 
     position: relative;   
+    margin-top: 50px;
 }
 
 .boxImage3:hover {
@@ -174,11 +218,12 @@ header {
 }
 
 .bgblack {
-    margin-top: 20px;
+    margin-top: 50px;
     background-color: rgba(42, 43, 47, 1);
     width: 100%;
     height: 465px;
     padding: 80px 40px;
+
 }
 
 .bgblack p,h3 {
@@ -526,16 +571,16 @@ h3::after {
     padding-top: 50px;
 }
 
-.about-me {
+#about-me {
     padding-left: 70px; 
 }
 
-.about-me h5{
+#about-me h5{
     font-size: 24px;
     letter-spacing: 4px;
 }
 
-.about-me p {
+#about-me p {
     letter-spacing: 2px;
 }
 
@@ -621,3 +666,4 @@ h3::after {
 .footernav {
     float: right;
 }
+
