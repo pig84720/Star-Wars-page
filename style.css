@@ -130,7 +130,9 @@ header > .text-box > .bottom > .btn:visited {
 .navbg > .logo {
     width: 40%;
     height: auto;
-    padding-left: 8%;
+    padding-left: 4%;
+    display: flex;
+    align-items: center;
 }
 
 .navbg > .logo > a {
@@ -141,6 +143,12 @@ header > .text-box > .bottom > .btn:visited {
     letter-spacing: 2px;
     font-size: 30px;
     line-height: 80px;
+}
+
+.navbg > .logo > img {
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
 }
 
 .navbg > .nav-items {
