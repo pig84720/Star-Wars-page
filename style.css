@@ -1,669 +1,713 @@
-div,form,h1,h2,h3,h4,h5,h6,p,ul {
+@import url("reset.css");
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    cursor: url(http://ani.cursors-4u.net/cursors/cur-12/cur1136.ani), url(http://ani.cursors-4u.net/cursors/images12/cur1136.png), auto !important;
 }
 
-body {
-    font-size: 18px;
-    font-weight: 300;
-    font-family: "Noto Sans TC",sans-serif;
-    background: url('https://i.screenshot.net/qg2yqtx')
-    center center;
-}
-
-h1 {
-    font-weight: 300;
-    font-size: 200%;
-    font-family: "Press Start 2P";
-    margin-top: 80px;
-    letter-spacing: 6px;
-    text-shadow:0.3em 0.3em 0.4em rgba(0,0,0,1);
-}
-
-h2 {
-    font-size: 100%;
-    letter-spacing: 4px;
-    font-weight: 400;
-    
-}
-
-h1::after {
-    display: block;
-    background-color: #e03d44;
-    content: "";
-    height: 2px;
-    width: 365px;
-    margin-top: 15px;  
-}
-
-.text-box {
-    color: white;
-    position: absolute;
-    transform: translate(40%,110%)
-}
-
-.bottom {
-    margin-top: 50px;
-}
-
-.btn:link {
-    text-decoration:none;
-    cursor: pointer;
-    font-weight: 100;
-    border-radius: 8px;
-    padding: 5px 12px;
-    transition: all 0.5s;
-}
-
-.btn:hover {
-    filter:brightness(1.2);
-}
-
-.btn-full:link,
-.btn-full:visited {
-    background-color: #e03d44;
-    color: white;
-}
-
-/*--菜單--*/
-
-.nav {
-    margin: 20px 0;
-    padding-right: 0px;
-}
-
-.logo {
-    font-weight: 800;
-    letter-spacing: 2px;
-    padding-left: 50px; 
-    margin: auto;
-}
-
-.navbg {
-    height: 70px;
-    background-color: rgba(42,43,47,1);
-    margin-top: 0;
-}
-
-.bg {
-    margin-top: 0;
-}
-
-.nav-item{
-    font-weight: 200;
-    letter-spacing: 2px;
-    margin: 0 10px;
-    padding: 0;
-}
-
-.nav-item a{
-    color: white;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+a,
+input,
+button,
+div {
+    font-family: "Microsoft JhengHei", "Heiti TC", "sans-serif";
     text-decoration: none;
-    transition: all 0.4s;
 }
 
-.nav-item a:hover {
-    color: #e03d44;
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Noto Sans TC", sans-serif;
 }
 
-/*--HEADER--*/
+/*--header--*/
 
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.4)),url(https://images5.alphacoders.com/720/thumb-1920-720131.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(https://images5.alphacoders.com/720/thumb-1920-720131.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+header > .text-box {
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 25% 0 15%;
+}
+
+header > .text-box > h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 34px;
+    font-family: "Press Start 2P";
+    line-height: 46px;
+    letter-spacing: 6px;
+    text-shadow: 0.3em 0.2em 0.4em rgba(0, 0, 0, 1);
+}
+
+header > .text-box > .under_line {
+    width: 385px;
+    height: 3px;
+    background-color: #e03d44;
+}
+
+header > .text-box > h2 {
+    color: white;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 4px;
+    font-family: "Russo One", sans-serif;
+    font-weight: 300;
+}
+
+header > .text-box > .bottom {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 35px;
+}
+
+header > .text-box > .bottom > .btn {
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 0px 15px;
+    transition: filter 0.7s;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+header > .text-box > .bottom > .btn:hover {
+    cursor: url(http://ani.cursors-4u.net/toons/too-12/too1117.ani), url(http://ani.cursors-4u.net/toons/too-12/too1117.png), auto !important;
+    filter: brightness(1.3);
+}
+
+header > .text-box > .bottom > .btn:link,
+header > .text-box > .bottom > .btn:visited {
+    background-color: rgba(224, 61, 68, 0.9);
+    color: white;
+}
+
+/*--menu--*/
+
+.navbg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: rgba(42, 43, 47, 1);
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.navbg > .logo {
+    width: 40%;
+    height: auto;
+    padding-left: 8%;
+}
+
+.navbg > .logo > a {
+    cursor: url(http://ani.cursors-4u.net/toons/too-12/too1117.ani), url(http://ani.cursors-4u.net/toons/too-12/too1117.png), auto !important;
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 30px;
+    line-height: 80px;
+}
+
+.navbg > .nav-items {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    height: auto;
+    padding-right: 8%;
+}
+
+.navbg > .nav-items > .nav-item > a {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.navbg > .nav-items > .nav-item > a:hover {
+    cursor: url(http://ani.cursors-4u.net/toons/too-12/too1117.ani), url(http://ani.cursors-4u.net/toons/too-12/too1117.png), auto !important;
+    color: #e03d44;
 }
 
 /*---about-us---*/
 
 .about-us {
-    height: 35vh;
-
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 50px;
 }
 
-.title-row {
-    margin-top: 40px;
+.about-us_area {
+    margin-top: 65px;
+}
+
+.about-us > .title {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
     text-align: center;
 }
 
-.title-row h2 {
+.about-us > .title > h2 {
+    padding-top: 30px;
     font-size: 24px;
+    line-height: 60px;
+    margin: 0;
 }
 
-.dividerCenter  {
+.about-us > .dividerCenter {
     height: 2px;
-    width: 80px;
+    width: 120px;
     background-color: #e03d44;
-    margin: 15px auto;
+    margin: 0 auto 30px auto;
 }
 
-.content {
-    margin: 20px 0 50px 0;
+.about-us > .text {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
-.content p {
+.about-us > .text > p {
+    width: 100%;
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 32px;
 }
 
-
-/*---menu---*/
-
-.menu {
-    height: 465px;
+.about-us > .text > .p1 {
+    padding-left: 15%;
+    padding-right: 2.5%;
 }
 
-.boxImage {
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.1)), url('https://images.alphacoders.com/870/thumb-1920-870016.jpg');
-    height: 465px;
-    background-size: cover;
-    background-position: 50% 50%;
-    transition: all 0.7s;  
-    position: relative; 
-    margin-top: 50px;
+.about-us > .text > .p2 {
+    padding-left: 2.5%;
+    padding-right: 15%;
 }
 
-.boxImage:hover {
-    cursor: pointer;
-    filter:brightness(2);
+/*---type---*/
+
+.type {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
 }
-.boxImage2 {
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.1)), url('https://images8.alphacoders.com/988/thumb-1920-988762.jpg');
-    height: 465px;
+
+.type > .items {
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.type > .items > .boxImage {
+    width: 33.33%;
+    height: auto;
     background-size: cover;
     background-position: 50% 50%;
     transition: all 0.7s;
-    position: relative;  
-    margin-top: 50px;  
+    display: flex;
+    align-items: flex-end;
 }
 
-.boxImage2:hover {
-    cursor: pointer;
-    filter:brightness(1.5);
+.type > .items > .boxImage:hover {
+    cursor: url(http://ani.cursors-4u.net/toons/too-12/too1117.ani), url(http://ani.cursors-4u.net/toons/too-12/too1117.png), auto !important;
+    filter: brightness(2);
 }
 
-.boxImage3 {
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.1)), url('https://images7.alphacoders.com/888/thumb-1920-888752.jpg');
-    height: 465px;
-    background-size: cover;
-    background-position: 50% 50%;
-    transition: all 0.7s; 
-    position: relative;   
-    margin-top: 50px;
+.type > .items > .boxImage1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("https://images.alphacoders.com/870/thumb-1920-870016.jpg");
 }
 
-.boxImage3:hover {
-    cursor: pointer;
-    filter:brightness(2);
+.type > .items > .boxImage2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("https://images8.alphacoders.com/988/thumb-1920-988762.jpg");
+}
+
+.type > .items > .boxImage3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("https://images7.alphacoders.com/888/thumb-1920-888752.jpg");
 }
 
 .imageBoxesTitle {
-    position: absolute;
-    bottom: 40px;
     padding: 24px;
 }
 
-.imageBoxesTitle span {
+.imageBoxesTitle > span {
     font-size: 24px;
     color: white;
 }
 
-.divder {
+.imageBoxesTitle > .divder {
     width: 40px;
     height: 2px;
     background-color: #e03d44;
     margin-top: 4px;
 }
 
-.bgblack {
-    margin-top: 50px;
+.type > .bgblack {
     background-color: rgba(42, 43, 47, 1);
-    width: 100%;
-    height: 465px;
-    padding: 80px 40px;
-
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.bgblack p,h3 {
-    color: white;
-}
-
-.lead {
-    font-size: 18px;
-    margin-top: 10px;
-}
-.bgblack p {
-    letter-spacing: 1px;
-}
-
-.bgblack h3 {
+.type > .bgblack > h3 {
     font-size: 30px;
+    line-height: 60px;
     letter-spacing: 2px;
+    color: white;
+    margin: 0 auto;
 }
 
-h3::after {
+.type > .bgblack > h3::after {
     display: block;
     background-color: #e03d44;
     content: "";
     height: 2px;
     width: 80px;
-    margin-top: 18px;  
+    margin: 18px auto 0 auto;
 }
 
-.ctabtns {
-    margin-top: 50px;
-}
-
-.buttom:hover {
-    filter:brightness(0.8);
+.type > .bgblack > .lead {
+    padding: 0 10%;
     font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    color: white;
 }
 
+.type > .bgblack > .ctabtns {
+    margin: 50px auto 0 auto;
+    font-size: 16px;
+}
 
+.type > .bgblack > .ctabtns > .buttom:hover {
+    filter: brightness(0.8);
+    font-size: 16px;
+    cursor: url(http://ani.cursors-4u.net/toons/too-12/too1117.ani), url(http://ani.cursors-4u.net/toons/too-12/too1117.png), auto !important;
+}
 
-.buttom:link {
-    text-decoration:none;
-    cursor: pointer;
-    font-weight: 200;
+.type > .bgblack > .ctabtns > .buttom:link {
+    text-decoration: none;
+    font-weight: 700;
     border-radius: 8px;
     padding: 5px 12px;
     transition: all 0.5s;
 }
 
-.buttom:link,
-.buttom:visited {
+.type > .bgblack > .ctabtns > .buttom:link,
+.type > .bgblack > .ctabtns > .buttom:visited {
     background-color: white;
-    color:rgba(42, 43, 47, 1);
-}
-.small {
-    padding:0;
+    color: rgba(42, 43, 47, 1);
 }
 
 /*---角色關係圖---*/
 
-.relation-title{
-    height: 180px;
+.story {
     width: 100%;
-    background-color: black;
-    padding: 60px 300px;
-}
-
-.relation-title h4{
-    font-size: 60px;
-    letter-spacing: 20px;
-    color: #AAAAAA;
-    transition: all 0.7s;
-}
-
-.relation-title h4:hover{
-    filter:brightness(1.8);
-    color: white;
-}
-
-.big {
-    margin-top: 0;
-}
- 
-.bg1 {
-    margin-top: 20px;
-    margin-left: 10px; 
-    height: 284.4px;
-    width: 100%;
-    background-image: url("http://www.murera.com/starwars/images/starwars_infographic-03.jpg");   
-    background-size: contain;
-    background-repeat:no-repeat;
-}
-
-.bg2 {
-    height: 355.5px;
-    margin-left: 10px;
-    width: 98.5%;
-    background-image: url("http://www.murera.com/starwars/images/starwars_infographic-04.jpg");   
-    background-size: contain;
-    background-repeat:no-repeat;
-    margin-bottom: 0;
-}
-
-.small-title {
-    margin-top: 100px;
-}
-
-.small-title h2{
-    font-size: 24px;
-    letter-spacing: 3px;
-    text-align: center;
-}
-
-.introduction{
-    padding: 50px 100px;
-}
-
-#A{
-    font-size: 18px;
-    letter-spacing: 2px;    
-}
-
-.big2 {
-    margin-top: 0;
-    height: 776px;
-}
-
-.line {
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    left: 170px;
-    width: 700px;
-    background-color: #e03d44;
-}
-
-.bg3 {
-    margin-left: 10px;
-    height: 375px;
-    width: 100%;
-    background-image: url("http://www.murera.com/starwars/images/starwars_infographic-06.jpg");   
-    background-size: contain;
-    background-repeat:no-repeat;
-}
-
-.bg4 {
-    margin-left: 10px;
-    height: 401px;
-    width: 98.5%;
-    background-image: url("http://www.murera.com/starwars/images/starwars_infographic-07.jpg");   
-    background-size: contain;
-    background-repeat:no-repeat;
-    margin-bottom: 0;
-}
-
-.big2 {
-    height: 776px;
-}
-
-.bg5 {
-    margin-top: 30px;
-    margin-left: 10px;
-    height: 304px;
-    width: 100%;
-    background-image: url("http://www.murera.com/starwars/images/starwars_infographic-12.jpg");   
-    background-size: contain;
-    background-repeat:no-repeat;
-}
-
-.bg6 {
-    margin-left: 10px;
-    height: 420px;
-    width: 98.5%;
-    background-image: url("http://www.murera.com/starwars/images/starwars_infographic-11.jpg");   
-    background-size: contain;
-    background-repeat:no-repeat;
-    margin-bottom: 0;
-}
-
-.big3 {
-    margin-top: 0;
-    height: 724px;
-}
-
-
-/*---角色---*/
-.cha {
-    margin-top: 0px;
-}
-
-.cha-photo {
-    background-color: black;
+    height: auto;
     overflow: hidden;
 }
 
-.cha-photo img{
+.story > .relation-title {
+    height: auto;
     width: 100%;
-    opacity: 0.7;
-    transform: scale(1.15);
-    transition:  all 0.5s;
+    background-color: black;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.cha-photo img:hover{
-    opacity: 1.3;
+.story > .relation-title > h4 {
+    font-size: 60px;
+    letter-spacing: 20px;
+    line-height: 150px;
+    color: #aaaaaa;
+    transition: all 0.7s;
+    margin: 0;
+}
+
+.story > .relation-title > h4:hover {
+    cursor: url(http://ani.cursors-4u.net/toons/too-12/too1117.ani), url(http://ani.cursors-4u.net/toons/too-12/too1117.png), auto !important;
+    filter: brightness(1.8);
+    color: white;
+}
+
+.story > .chapter {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.story > .chapter > .image {
+    width: 33.33%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.story > .chapter > .image > img {
+    width: 100%;
+    height: auto;
+}
+
+.story > .chapter > .chapters {
+    width: 66.66%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+.story > .chapter > .chapters > h2 {
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.story > .chapter > .chapters > p {
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0 8%;
+}
+
+.story > .chapter > .chapters > .line {
+    position: absolute;
+    bottom: 0;
+    margin: 0 15%;
+    width: 70%;
+    height: 3px;
+    background-color: #e03d44;
+}
+
+/*---角色---*/
+
+#photo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#photo > img {
+    width: 25%;
+    height: auto;
+    transition: filter 0.5s;
+}
+
+#photo > img:hover {
+    cursor: url(http://ani.cursors-4u.net/toons/too-12/too1117.ani), url(http://ani.cursors-4u.net/toons/too-12/too1117.png), auto !important;
+    filter: brightness(1.2);
 }
 
 /*---反饋---*/
 
 .feedback {
-    margin-top:0; 
-    margin-bottom:0; 
-    height: 100vh;
-    background-image: url('https://images2.alphacoders.com/781/thumb-1920-781491.jpg');
-    background-size: cover;
-    background-position: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
 }
 
-.container1 {
-    margin-top:0;
-    background-color:black;
-    height: 100vh;
+.feedback > img {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
 }
 
-.smallphoto{
+.feedback > .answer {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.feedback > .answer > .box {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 8%;
+}
+
+.feedback > .answer > .box > .head {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.feedback > .answer > .box > .head > img {
     width: 70px;
+    height: 70px;
     border-radius: 50%;
     transition: all 0.4s;
 }
 
-.smallphoto:hover {
+.feedback > .answer > .box > .head > img:hover {
+    cursor: url(http://ani.cursors-4u.net/toons/too-12/too1117.ani), url(http://ani.cursors-4u.net/toons/too-12/too1117.png), auto !important;
     transform: scale(0.95);
-    filter:brightness(1.3);
+    filter: brightness(1.3);
 }
 
-.name {
+.feedback > .answer > .box > .head > .data {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.feedback > .answer > .box > .head > .data > h2 {
     letter-spacing: 3px;
-    padding: 0;
     font-size: 20px;
+    line-height: 30px;
     font-weight: 600;
-    margin-top: 10px;
+    margin: 0;
     color: white;
 }
 
-.name span {
+.feedback > .answer > .box > .head > .data > span {
     display: block;
     font-weight: 400;
     font-size: 12px;
     opacity: 0.7;
-}
-
-.hd {
-    padding: 0;
-}
-
-.box {
-    margin: 55px auto 0 auto;
-    padding: 0 40px 0 40px;
-}
-
-.box2 {
-    margin: 0 auto 0 auto;
-    padding: 0 40px 60px 40px;
-}
-
-.impression{
-    padding-top: 0px;
-}
-
-.impression p{
     color: white;
-    vertical-align:text-top;
-    padding: 0;
-    margin: 0;
+}
+
+.feedback > .answer > .box > p {
+    color: white;
+    padding-top: 20px;
 }
 
 /*---開放時間、地圖---*/
 
-.contact{
-    margin-top: 0;
+.contact {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
 }
 
-.bgcolor {
+.contact > .Information {
+    width: 33.33%;
+    height: auto;
+    overflow: hidden;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact > .bg1 {
     color: white;
     background-color: sienna;
-    height: 480px;
-    padding: 50px 70px 0 90px;
 }
 
-.bgcolor h2{
-    font-size: 28px;
-    letter-spacing: 6px;
+.contact > .Information > .container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 0 10%;
 }
 
-.bgcolor2 h2{
-    font-size: 28px;
-    letter-spacing: 6px;
+.contact > .Information > .container > h2 {
+    font-size: 30px;
+    letter-spacing: 4px;
 }
 
-.bgcolor p{
-    margin-top: 5px;
+.contact > .Information > .container > p {
     font-size: 18px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 2px;
 }
 
-.bgcolor2 p{
-    margin-top: 5px;
-    font-size: 18px;
-}
-
-.email:hover{
+.contact > .Information > .container > .email:hover {
+    cursor: url(http://ani.cursors-4u.net/toons/too-12/too1117.ani), url(http://ani.cursors-4u.net/toons/too-12/too1117.png), auto !important;
     color: red;
 }
 
-.bgcolor2 {
-
-    height: 480px;
-    padding: 50px 70px 0 70px;
-}
-
-.divder2 {
+.contact > .Information > .container > .divder2 {
     width: 55px;
     height: 2px;
     background-color: white;
     margin-top: 10px;
 }
 
-.divder3 {
+.contact > .Information > .container > .divder3 {
     width: 55px;
     height: 2px;
     background-color: red;
     margin-top: 10px;
 }
 
-.map {
-    width: 100%;
-    height: 480px;
-    margin-left: -13px;
+.contact > .map-box {
+    width: 33.33%;
+    height: auto;
+    overflow: hidden;
 }
 
 /*---footer---*/
 
-.footerbg {
-    margin-top: 0;
-    background-color: rgba(42,43,47,0.96);
-    color: rgba(255,255,255,0.8);
-    height: 400px;
-    padding-top: 50px;
+footer {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-#about-me {
-    padding-left: 70px; 
+footer > article {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
 }
 
-#about-me h5{
+footer > article > .information {
+    width: 33.33%;
+    height: auto;
+    overflow: hidden;
+    padding: 40px 0 40px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #59656f;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer > article > .information1 {
+    width: 66.66%;
+    padding: 40px 0;
+}
+
+footer > article > .information > .text {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 24px;
-    letter-spacing: 4px;
+    padding-left: 20%;
 }
 
-#about-me p {
-    letter-spacing: 2px;
+footer > article > .information > .text > .divder {
+    width: 65px;
+    height: 2px;
+    background-color: white;
+    margin-top: 5px;
 }
 
-.messenger2 h4{
-    font-size: 24px;
-    letter-spacing: 4px;
+footer > article > .information > .about-me {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: center;
 }
 
-.messenger2 p{
-    margin-bottom: 5px;
-}
-
-.messenger2 p,
-.messenger2 a{
-    letter-spacing: 2px;
-}
-
-.social-links {
-    margin-top:4px;
-    font-size: 18px;
-}
-
-.social-links li{
-    display: block;
-    margin-top: 10px;
-}
-
-.social-links li a{
-    text-decoration: none;
-    color: rgba(255,255,255,0.8);
-}
-
-.ion-social-facebook,
-.ion-social-instagram,
-.ion-social-googleplus,
-.ion-social-github {
-    margin: 8px;
+footer > article > .information > .about-me > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     transition: all 0.4s;
 }
 
-.ion-social-facebook:hover {
-    color:#3b5998;
+footer > article > .information > .about-me > p {
+    padding-top: 40px;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 600;
 }
 
-.ion-social-instagram:hover {
-    color: #bb5e00;
+footer > article > .information > .about-me > img:hover {
+    cursor: url(http://ani.cursors-4u.net/toons/too-12/too1117.ani), url(http://ani.cursors-4u.net/toons/too-12/too1117.png), auto !important;
+    transform: scale(0.95);
+    filter: brightness(1.2);
 }
 
-.ion-social-googleplus:hover {
-    color:#dd4b39;
+footer > article > .information > a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
 }
 
-.ion-social-github:hover {
-    color:#125688;
+footer > article > .information > a > img {
+    width: 100%;
+    height: 100%;
+    cursor: url(http://ani.cursors-4u.net/toons/too-12/too1117.ani), url(http://ani.cursors-4u.net/toons/too-12/too1117.png), auto !important;
 }
 
-.iconbox {
-    display: inline-block;
-    width: 15px;
-    text-align: center;
+footer > .copyright {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: rgb(38, 39, 46);
+    padding-left: 5%;
 }
 
-.copyright {
-    margin-top: 0;
-    background-color: rgb(38,39,46);
-}
-
-#mark {
+footer > .copyright > p {
     color: rgba(255, 255, 255, 0.4);
     line-height: 50px;
     font-size: 14px;
-    margin:0 50px;
 }
-
-.copyright a{
-    margin: 0 10px;
-    line-height: 50px;
-    font-size: 14px;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.4)
-}
-
-.footernav {
-    float: right;
-}
-
