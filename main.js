@@ -21,19 +21,17 @@ $(document).ready(function() {
     });
 
     /*監看行動裝置橫放或直放 */
-    $(function() {
-        window.addEventListener("orientationchange", onOrientationchange, false);
-        function onOrientationchange() {
-            if (window.orientation === 180 || window.orientation === 0) {
-                /*orientation: portrait   直式*/
-                $("#orientation").hide();
-            }
-            if (window.orientation === 90 || window.orientation === -90) {
-                /*orientation: landscape  橫式*/
-                $("#orientation").show();
-            }
+    window.addEventListener("orientationchange", onOrientationchange, false);
+    function onOrientationchange() {
+        if (window.orientation === 180 || window.orientation === 0) {
+            /*orientation: portrait   直式*/
+            $("#orientation").hide();
         }
-    });
+        if (window.orientation === 90 || window.orientation === -90) {
+            /*orientation: landscape  橫式*/
+            $("#orientation").show();
+        }
+    }
 
     /*點擊超連結滑動*/
     $("#logo").click(function() {

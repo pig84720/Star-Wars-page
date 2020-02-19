@@ -44,22 +44,6 @@ body {
     display: none;
 }
 
-/*--orientation:portrait  直式--*/
-
-/* @media screen and (orientation: portrait) {
-    #orientation {
-        display: none;
-    }
-} */
-
-/*--orientation:landscape  橫式--*/
-
-/* @media screen and (orientation: landscape) {
-    #orientation {
-        display: block;
-    }
-} */
-
 /*--header--*/
 
 header {
