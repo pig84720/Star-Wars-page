@@ -61,12 +61,6 @@ header > .text-box > h1 {
     text-shadow: 0.3em 0.2em 0.4em rgba(0, 0, 0, 1);
 }
 
-header > .text-box > .under_line {
-    width: 385px;
-    height: 3px;
-    background-color: #e03d44;
-}
-
 header > .text-box > h2 {
     color: white;
     font-size: 16px;
@@ -128,14 +122,22 @@ header > .text-box > .bottom > .btn:visited {
 }
 
 .navbg > .logo {
-    width: 40%;
+    width: 50%;
     height: auto;
     padding-left: 4%;
     display: flex;
     align-items: center;
 }
 
-.navbg > .logo > a {
+.navbg > .logo > .logo_box {
+    width: auto;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+}
+
+.navbg > .logo > .logo_box > a {
     cursor: url(http://ani.cursors-4u.net/toons/too-12/too1117.ani), url(http://ani.cursors-4u.net/toons/too-12/too1117.png), auto !important;
     color: white;
     text-decoration: none;
@@ -145,16 +147,20 @@ header > .text-box > .bottom > .btn:visited {
     line-height: 80px;
 }
 
-.navbg > .logo > img {
+.navbg > .logo > .logo_box > img {
     width: 50px;
     height: 50px;
     margin-right: 30px;
 }
 
+.navbg > .logo > #menu_img {
+    display: none;
+}
+
 .navbg > .nav-items {
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    width: 50%;
     height: auto;
     padding-right: 8%;
 }
@@ -201,9 +207,9 @@ header > .text-box > .bottom > .btn:visited {
 
 .about-us > .dividerCenter {
     height: 2px;
-    width: 120px;
+    width: 7%;
     background-color: #e03d44;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 2% auto;
 }
 
 .about-us > .text {
@@ -313,7 +319,7 @@ header > .text-box > .bottom > .btn:visited {
     content: "";
     height: 2px;
     width: 80px;
-    margin: 18px auto 0 auto;
+    margin: 2% auto 0 auto;
 }
 
 .type > .bgblack > .lead {
@@ -467,10 +473,13 @@ header > .text-box > .bottom > .btn:visited {
     display: flex;
 }
 
-.feedback > img {
+.feedback > .img {
     width: 50%;
     height: auto;
     overflow: hidden;
+    background-image: url("https://images2.alphacoders.com/781/thumb-1920-781491.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 .feedback > .answer {
@@ -718,4 +727,565 @@ footer > .copyright > p {
     color: rgba(255, 255, 255, 0.4);
     line-height: 50px;
     font-size: 14px;
+}
+
+/*-----------------------------------------*/
+
+@media screen and (max-width: 1280px) {
+    .feedback > .answer {
+        flex-direction: column;
+    }
+
+    .feedback > .answer > .box {
+        width: 100%;
+        flex-direction: row;
+        padding: 15px 6% 15px 0;
+    }
+
+    .feedback > .answer > .box > p {
+        font-size: 13px;
+        padding: 5% 0;
+        width: 70%;
+    }
+
+    .feedback > .answer > .box > .head {
+        width: 30%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feedback > .answer > .box > .head > .data {
+        padding-left: 0;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .feedback > .answer > .box > .head > .data > h2 {
+        letter-spacing: 1px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .navbg > .nav-items > .nav-item > a {
+        font-size: 16px;
+    }
+
+    .about-us > .title > h2 {
+        padding-top: 1%;
+        font-size: 1.875vw;
+    }
+
+    .about-us > .text > p {
+        font-size: 1.25vw;
+        line-height: 2.5vw;
+    }
+
+    .about-us > .text > .p1 {
+        padding-left: 8%;
+        padding-right: 2%;
+    }
+
+    .about-us > .text > .p2 {
+        padding-left: 2%;
+        padding-right: 8%;
+    }
+
+    .type > .bgblack {
+        padding: 50px 0;
+    }
+
+    .type > .bgblack > h3 {
+        font-size: 22px;
+        line-height: 44px;
+        letter-spacing: 2px;
+    }
+
+    .type > .bgblack > .lead {
+        padding: 0 8%;
+        font-size: 13px;
+        line-height: 26px;
+        letter-spacing: 1px;
+        margin-top: 16px;
+    }
+
+    .story > .relation-title > h4 {
+        font-size: 4.68vw;
+        letter-spacing: 15px;
+        line-height: 120px;
+    }
+
+    .story > .chapter > .chapters > h2 {
+        font-size: 1.71vw;
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+
+    .story > .chapter > .chapters > p {
+        font-size: 1.25vw;
+        line-height: 2.5vw;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    header > .text-box > h1 {
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: 5px;
+    }
+
+    header > .text-box > h2 {
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 3px;
+    }
+
+    header > .text-box > .bottom {
+        margin-top: 25px;
+    }
+
+    header > .text-box > .bottom > .btn {
+        line-height: 24px;
+        font-size: 16px;
+    }
+
+    .navbg > .logo > .logo_box > a {
+        font-size: 24px;
+        line-height: 60px;
+    }
+
+    .navbg > .nav-items {
+        justify-content: space-around;
+        padding-right: 0;
+    }
+
+    .navbg > .nav-items > .nav-item > a {
+        font-size: 15px;
+    }
+
+    .navbg > .logo > .logo_box > img {
+        width: 35px;
+        height: 35px;
+        margin-right: 25px;
+    }
+
+    .type {
+        flex-direction: column;
+    }
+
+    .type > .items {
+        width: 100%;
+        height: 300px;
+    }
+
+    .type > .bgblack {
+        width: 100%;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .type > .bgblack > .lead {
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .type > .bgblack > .ctabtns {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .type > .bgblack > h3 {
+        margin: 0;
+    }
+
+    #photo > img {
+        width: 50%;
+    }
+
+    .feedback {
+        flex-direction: column;
+    }
+
+    .feedback > .img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .feedback > .answer {
+        width: 100%;
+    }
+
+    .feedback > .answer > .box {
+        align-items: center;
+    }
+
+    .feedback > .answer > .box > p {
+        padding: 0;
+        width: 70%;
+        font-size: 15px;
+    }
+
+    .contact > .Information > .container > h2 {
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+
+    .contact > .Information > .container > p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    footer > article > .information {
+        padding: 40px 0;
+    }
+
+    footer > article > .information > .text {
+        padding-left: 15%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .about-us {
+        padding-bottom: 30px;
+    }
+
+    .about-us > .text {
+        flex-direction: column;
+    }
+
+    .about-us > .title > h2 {
+        font-size: 18px;
+    }
+
+    .about-us > .text > p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .about-us > .text > .p1 {
+        padding: 0 10% 10px 10%;
+    }
+
+    .about-us > .text > .p2 {
+        padding: 10px 10% 0 10%;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact > .Information {
+        width: 100%;
+        padding: 25px 0;
+        justify-content: center;
+    }
+
+    .contact > .Information > .container {
+        width: auto;
+        padding: 0;
+    }
+
+    .contact > .Information > .container2 {
+        padding-right: 9%;
+    }
+
+    .contact > .map-box {
+        width: 100%;
+        height: 300px;
+    }
+
+    footer > article {
+        flex-direction: column;
+    }
+
+    footer > article > .information {
+        width: 100%;
+        padding: 0 0 30px 0;
+    }
+
+    footer > article > .information1 {
+        width: 100%;
+        padding: 40px 0 0 0;
+    }
+
+    footer > article > .information > .text {
+        padding-left: 18%;
+    }
+
+    footer > article > .information > .about-me {
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    footer > article > .information > .about-me > img {
+        margin-left: 7%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header > .text-box > h1 {
+        font-size: 3.7vw;
+        line-height: 4.3vw;
+        letter-spacing: 4px;
+    }
+
+    header > .text-box > h2 {
+        font-size: 1.84vw;
+        line-height: 3.68vw;
+        letter-spacing: 2px;
+    }
+    header > .text-box > .bottom {
+        margin-top: 20px;
+    }
+
+    header > .text-box > .bottom > .btn {
+        line-height: 3.38vw;
+        font-size: 2.15vw;
+    }
+
+    .navbg {
+        transition: height 0.4s;
+        flex-direction: column;
+        height: 60px;
+    }
+
+    .open {
+        height: 214px;
+    }
+
+    .navbg > .nav-items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+
+    .navbg > .nav-items > .nav-item > a {
+        line-height: 36px;
+    }
+
+    .navbg > .logo {
+        width: 100%;
+        justify-content: space-between;
+        padding-right: 4%;
+    }
+
+    .navbg > .logo > #menu_img {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbg > .logo > #menu_img > img:hover {
+        cursor: url(http://ani.cursors-4u.net/toons/too-12/too1117.ani), url(http://ani.cursors-4u.net/toons/too-12/too1117.png), auto !important;
+    }
+
+    .navbg > .logo > #menu_img > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (max-width: 555px) {
+        header {
+            justify-content: center;
+        }
+
+        header > .text-box {
+            width: auto;
+            margin: 0;
+        }
+
+        header > .text-box > h1 {
+            font-size: 20px;
+            line-height: 23px;
+        }
+
+        header > .text-box > h2 {
+            font-size: 10.2px;
+            line-height: 20.4px;
+        }
+
+        .navbg {
+            height: 50px;
+        }
+
+        .open {
+            height: 203px;
+        }
+
+        .navbg > .logo > .logo_box > a {
+            font-size: 20px;
+            line-height: 50px;
+        }
+
+        .navbg > .logo > .logo_box > img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .navbg > .logo > #menu_img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .about-us > .title > h2 {
+            font-size: 3.24vw;
+            line-height: 8.1vw;
+        }
+
+        .type > .items {
+            flex-wrap: wrap;
+            height: auto;
+        }
+
+        .type > .items > .boxImage {
+            width: 100%;
+            height: 300px;
+        }
+
+        .imageBoxesTitle > span {
+            font-size: 18px;
+        }
+
+        .imageBoxesTitle > .divder {
+            width: 30px;
+            height: 2px;
+        }
+
+        .type > .bgblack {
+            padding: 30px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .type > .bgblack > h3::after {
+            margin: 2% auto 15px auto;
+        }
+
+        .type > .bgblack > .lead {
+            margin-bottom: 25px;
+        }
+
+        .type > .bgblack > .ctabtns {
+            font-size: 12px;
+        }
+
+        .story > .relation-title > h4 {
+            font-size: 4.68vw;
+            letter-spacing: 2.7vw;
+            line-height: 11.7vw;
+        }
+
+        .story > .chapter {
+            flex-direction: column;
+        }
+
+        .story > .chapter > .image {
+            width: 100%;
+        }
+
+        .story > .chapter > .chapters {
+            width: 100%;
+        }
+
+        .story > .chapter > .chapters > h2 {
+            margin-top: 20px;
+            font-size: 17px;
+        }
+
+        .story > .chapter > .chapters > p {
+            font-size: 12px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+
+        .story > .chapter > .chapters > .line {
+            display: none;
+        }
+
+        .feedback > .answer {
+            padding-bottom: 30px;
+        }
+
+        .feedback > .answer > .box {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .feedback > .answer > .box > p {
+            padding: 15px 0;
+        }
+
+        .feedback > .answer > .box > .head {
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .feedback > .answer > .box > .head > .data {
+            margin-left: 20px;
+            padding: 0;
+        }
+
+        .feedback > .answer > .box > .head > .data > h2 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .feedback > .answer > .box > .head > .data > span {
+            font-size: 14px;
+        }
+
+        footer > article > .information1 {
+            flex-direction: column;
+            padding: 0;
+        }
+
+        footer > article > .information1 > .about-me {
+            align-items: center;
+        }
+
+        footer > article > .information1 > .about-me > img {
+            margin: 0;
+        }
+
+        footer > article > .information1 > .text {
+            width: 100%;
+            padding: 0;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        footer > article > .information1 > .text > h2 {
+            font-size: 24px;
+        }
+
+        footer > article > .information1 > .text > .divder {
+            width: 50px;
+        }
+
+        footer > .copyright > p {
+            font-size: 10px;
+        }
+    }
+
+    @media screen and (max-width: 402px) {
+        #photo > img {
+            width: 100%;
+        }
+
+        footer > article > .information1 > .about-me > p {
+            font-size: 12.5px;
+        }
+    }
 }

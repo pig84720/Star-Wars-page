@@ -10,6 +10,14 @@ $(document).ready(function() {
         }
     });
 
+    $("#menu_img").on("click", function() {
+        if ($("nav").hasClass("open")) {
+            $("nav").removeClass("open");
+        } else {
+            $("nav").addClass("open");
+        }
+    });
+
     /*點擊超連結滑動*/
     $("#logo").click(function() {
         $("html, body").animate({ scrollTop: $("#home").offset().top }, 500);
@@ -37,21 +45,5 @@ $(document).ready(function() {
 
     $("#position").click(function() {
         $("html, body").animate({ scrollTop: $("#contact").offset().top }, 500);
-    });
-    /*map*/
-
-    var map = new GMaps({
-        div: ".map",
-        lat: 25.085914,
-        lng: 121.5191553
-    });
-
-    map.addMarker({
-        lat: 25.085914,
-        lng: 121.5191553,
-        title: "絕地聖殿",
-        infoWindow: {
-            content: "<p>絕地聖殿</p>"
-        }
     });
 });
