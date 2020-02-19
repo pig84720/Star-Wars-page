@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    /*固定nav在上方*/
     var screen_height = document.body.clientHeight;
     $(window).scroll(function() {
         if ($(window).scrollTop() > screen_height) {
@@ -10,11 +11,27 @@ $(document).ready(function() {
         }
     });
 
+    /*menu展開、收起來*/
     $("#menu_img").on("click", function() {
         if ($("nav").hasClass("open")) {
             $("nav").removeClass("open");
         } else {
             $("nav").addClass("open");
+        }
+    });
+
+    /*監看行動裝置橫放或直放 */
+    $(function() {
+        window.addEventListener("orientationchange", onOrientationchange, false);
+        function onOrientationchange() {
+            if (window.orientation === 180 || window.orientation === 0) {
+                /*orientation: portrait   直式*/
+                $("#orientation").hide();
+            }
+            if (window.orientation === 90 || window.orientation === -90) {
+                /*orientation: landscape  橫式*/
+                $("#orientation").show();
+            }
         }
     });
 

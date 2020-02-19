@@ -30,6 +30,36 @@ body {
     font-family: "Noto Sans TC", sans-serif;
 }
 
+#orientation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #704c5e;
+    background-image: url("/moblie.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+/*--orientation:portrait  直式--*/
+
+/* @media screen and (orientation: portrait) {
+    #orientation {
+        display: none;
+    }
+} */
+
+/*--orientation:landscape  橫式--*/
+
+/* @media screen and (orientation: landscape) {
+    #orientation {
+        display: block;
+    }
+} */
+
 /*--header--*/
 
 header {
